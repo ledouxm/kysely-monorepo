@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1703350286889,
-      "tag": "0000_unique_scream",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1703352045087,
-      "tag": "0001_workable_talkback",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1703352068858,
-      "tag": "0002_mighty_eddie_brock",
+      "when": 1703353559974,
+      "tag": "0000_broken_mandrill",
       "breakpoints": true
     }
   ]
