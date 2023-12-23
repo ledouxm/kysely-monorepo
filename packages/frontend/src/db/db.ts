@@ -6,13 +6,8 @@ const dialect = new WaSqliteWorkerDialect({
     fileName: "test.db",
 });
 
-const db = new Kysely<Database>({ dialect });
+export const db = new Kysely<Database>({ dialect });
 
-const migrator = new Migrator(db, {
+export const migrator = new Migrator(db, {
     migrationsFolderUrl: `${import.meta.env.VITE_BACKEND_URL}/migrations`,
 });
-
-export const testDb = async () => {
-    await migrator.migrate();
-    return db.selectFrom("migration").selectAll().execute();
-};

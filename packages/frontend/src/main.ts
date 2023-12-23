@@ -1,5 +1,10 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { db, migrator } from "./db/db";
 
-createApp(App).mount('#app')
+const main = async () => {
+    await migrator.migrate();
+
+    const tables = await db.introspection.getTables();
+    console.log(tables);
+};
+
+main();
